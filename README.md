@@ -31,11 +31,15 @@ samtools faidx genome.fa
 
 ## Run job
 Submit batch to slurm:
+```
 sbatch analysis_script_location read_1.fastq read_2.fastq output_name  reference_genome_location
+```
 
 For example: 
+```
 sbatch ../scripts/generate_hq-vcf.sh Adam-TAAGGCGA-ATAGAGAG_S8_R1_001.fastq Adam-TAAGGCGA-ATAGAGAG_S8_R2_001.fastq CB1267  ./Caenorhabditis_elegans/Ensembl/WBcel235/Sequence/Bowtie2Index/genome
-	- note there is no file extension at the end of the reference genome filename
+```
+Note there is no file extension at the end of the reference genome filename
 
 Wait for the script to run on the cluster!
 
